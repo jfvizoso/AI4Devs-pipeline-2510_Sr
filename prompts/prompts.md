@@ -56,4 +56,5 @@ Hay que definir estos **repository secrets** en el repositorio de GitHub (mismos
 
 **Nota:** El pipeline hace checkout, tests, build y luego despliega todo el repositorio (incluido `backend/` con `dist/`) al `TARGET_DIR` del EC2. En el servidor puedes configurar un servicio (systemd, PM2, etc.) que ejecute desde esa ruta `npm ci`, `npx prisma generate`, `npm run build` (opcional si ya despliegas `dist/`) y `npm start` (o el comando que uses en producción).
 
+
 ---
